@@ -476,8 +476,9 @@ function doLogin(){
   if(pw==='admin123'&&em){document.getElementById('adm-badge').textContent=em.split('@')[0];show('admin');}
   else alert('Mot de passe incorrect. Démo: admin123');
 }
-document.querySelector('.page').style.display='flex';
-
+//document.querySelector('.page').style.display='flex';
+show('landing');
+  
 function switchP(el,name){
   document.querySelectorAll('.sbi').forEach(e=>e.classList.remove('on'));
   el.classList.add('on');
